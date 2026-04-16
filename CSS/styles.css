@@ -1,0 +1,93 @@
+/*Whole file*/
+html{
+    scroll-behavior: smooth;
+    color:#002454;
+}
+/*Whole page*/
+body{
+    background-color: white;
+    display:grid;
+    padding:0%;
+    gap:0px;
+    margin:0%;
+    grid-template-rows: auto 1fr 100px;
+    text-align:center;
+    font-family: system-ui, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/*Header*/
+.header{
+    grid-row:1;
+    background-color: rgb(233, 233, 248);
+    display:grid;
+    grid-template-columns: 200px auto;
+}
+
+/*Header / Logo*/
+#YMECLogo{
+    grid-column: 1;
+    padding: 20px;
+}
+
+/*Header / Navigation Bar*/
+#NavBar{
+    grid-column: 2;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 30px;
+    padding: 0 10px 10px 0;
+
+}
+.nav-link{
+    flex:1;
+    width: 1fr;
+    text-decoration: none;
+    color: #002454;
+    font-size: 18px;
+    padding:10px;
+    border-radius: 5px;
+    max-width:100px;
+}
+
+/*Main body*/
+#MainBody{
+    grid-row:2;
+    gap:0px;
+    padding:0px;
+    margin: 0px;
+}
+
+/*Main Body / Banner and introduction*/
+#BannerTitle{
+    height:300px;
+    margin:0px;
+    z-index:9;
+    background-image: url("../images/placeholderbanner.png");
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-y: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-shadow: 2px 2px 4px #fac01a;
+    font-size:50px;
+}
+
+/*Main Body / Team Lists*/
+.TeamList{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+.MemberCard{
+    background-color: rgb(233, 233, 248);
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+}
