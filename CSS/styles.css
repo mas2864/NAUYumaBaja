@@ -20,25 +20,17 @@ body{
 .header{
     grid-row:1;
     background-color: rgb(233, 233, 248);
-    display:grid;
-    grid-template-columns: 200px auto;
-}
-
-/*Header / Logo*/
-#YMECLogo{
-    grid-column: 1;
-    padding: 20px;
 }
 
 /*Header / Navigation Bar*/
 #NavBar{
-    grid-column: 2;
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-wrap:wrap;
     gap: 30px;
-    padding: 0 10px 10px 0;
+    height:auto;
+    padding:30px;
 
 }
 .nav-link{
@@ -48,8 +40,9 @@ body{
     color: #002454;
     font-size: 18px;
     padding:10px;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width:100px;
+    border:#002454 1px solid;
 }
 
 /*Main body*/

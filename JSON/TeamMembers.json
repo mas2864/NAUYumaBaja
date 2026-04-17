@@ -1,0 +1,30 @@
+{
+    "Capstone": [
+        {"Name": "Cesar Duarte", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Treasurer", 
+        "Linkedin": "x", "Picture":"location"}},
+        {"Name": "Christian Mendez", "Team": "Ergonomics", "TeamLeader": false, "ClubPosition": "Officer", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Daniel Castaneda Manriquez", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "David Valdez", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Devean Barron", "Team": "Suspension", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Emma White", "Team": "Suspension", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Giancarlo Amezquita", "Team": "Drivetrain", "TeamLeader": true, "ClubPosition": "President", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "John Beeler", "Team": "Suspension", "TeamLeader": true, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Joseph Chavez", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Jovan Cramer", "Team": "Ergonomics", "TeamLeader": true, "ClubPosition": "Secretary", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Leonardo Rojas", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Vice President", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Manuel Saldana Gonzalez", "Team": "Suspension", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"},
+        {"Name": "Robert La Londe", "Team": "Ergonomics", "TeamLeader": false, "ClubPosition": "Member", 
+        "Linkedin": "x", "Picture":"location"}
+    ]
+}
