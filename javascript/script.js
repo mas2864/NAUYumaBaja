@@ -1,34 +1,10 @@
-async function fetchData() {
-  try {
-    const response = await fetch("./JSON/TeamMembers.json"); // Path to your file
-    if (!response.ok) throw new Error("Network response was not ok");
-    const membList = await response.json(); // Parses JSON into a JS object
-    console.log(membList);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-}
-fetchData();
+import * as data from "../JSON/TeamMembers.json"
+with {type:"json"};
 
-function getMemberList(askfor){
-    if(askfor=="leaders"){
-        var lookfor=true;
-        var memberList = document.getElementById("TeamLeadListID");
-    }
-    else{
-        var lookfor=false;
-        var memberList = document.getElementById("TeamMembListID");
-    }
-    memberList.innerHTML = ""; //cleans current content
-    
-    for (let i = 0; i < data.length; i++) {
-        if(data[i].TeamLeader==lookfor){
-        }
-    }
-}
-
+let namesample="the name";
 function sample(){
-    memberList.innerHTML="<div class='MemberClass'>"+"<h4 class='CardName'>"memberList[11].Name"</h4>"+"</div>";
+    memberList=document.getElementById("TeamMembListID");
+    memberList.innerHTML="<div class='MemberCard'><h4 class='CardName'>"+namesample+"</h4></div>";
 }
 
 sample();
