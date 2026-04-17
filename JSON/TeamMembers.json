@@ -1,5 +1,5 @@
 
-[
+{"Members":[
     {"id":"1", 
     "Name": "Cesar Duarte", 
     "Team": "Drivetrain", 
@@ -91,4 +91,4 @@
     "ClubPosition": "Member", 
     "Linkedin": "x", 
     "Picture":"location"}
-]
+]}
