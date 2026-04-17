@@ -1,5 +1,11 @@
-import * as data from "../JSON/TeamMembers.json"
-with {type:"json"};
+function loadJson() {
+  fetch("../json/TeamMembers.json").then(response => response.json()).then(data =>
+    {
+      // store json data in jsonData
+      jsonData = data;
+    }
+  )
+}
 
 let namesample="the name";
 let memberList=[];
