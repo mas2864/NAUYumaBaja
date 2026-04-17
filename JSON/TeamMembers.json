@@ -22,7 +22,7 @@
     {"id":11, "Name": "Leonardo Rojas", "Team": "Drivetrain", "TeamLeader": false, "ClubPosition": "Vice President", 
     "Linkedin": "x", "Picture":"location"},
     {"id":12, "Name": "Manuel Saldana Gonzalez", "Team": "Suspension", "TeamLeader": false, "ClubPosition": "Member", 
-    "Linkedin": "x", "Picture":"location"},
+    "Linkedin": "https://www.linkedin.com/in/manuel-saldana-b9a921207/", "Picture":"YMECMainLogo.png"},
     {"id":13, "Name": "Robert La Londe", "Team": "Ergonomics", "TeamLeader": false, "ClubPosition": "Member", 
     "Linkedin": "x", "Picture":"location"}
 ]

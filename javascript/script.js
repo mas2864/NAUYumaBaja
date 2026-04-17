@@ -23,8 +23,12 @@ function getMemberList(askfor){
     
     for (let i = 0; i < data.length; i++) {
         if(data[i].TeamLeader==lookfor){
-            
         }
     }
-
 }
+
+function sample(){
+    memberList.innerHTML="<div class='MemberClass'>"+"<h4 class='CardName'>"memberList[11].Name"</h4>"+"</div>";
+}
+
+sample();
