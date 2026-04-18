@@ -1,21 +1,17 @@
-let jsonData={};
-function loadJson() {
-  fetch("../JSON/TeamMembers.json").then(response => response.json()).then(data =>
-    {
-      // store json data in jsonData
-      jsonData = data.Members;
-    }
-  )
+async function getData(){
+    const requestURL="../JSON/members.json";
+    const request=new Request(requestURL);
+    const response=await fetch(request);
+    const jsonData=await response.json();
+    console.log(jsonData);
+    sample(jsonData);
 }
-let namesample="the name";
+getData();
 let memberList=[];
-
-function sample(){
+function sample(data=jsonData){
     memberList=document.getElementById("TeamMembListID");
-    memberList.innerHTML="<div class='MemberCard'><h4 class='CardName'>"+jsonData[1[.Name+" aa</h4></div>";
+    memberList.innerHTML="<div class='MemberCard'><h4 class='CardName'>"+data[1].Name+" aa</h4></div>";
 }
 
-sample();
-loadJson();
 
 
