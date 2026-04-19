@@ -16,7 +16,7 @@ function populateList(AllMemb){
         //Adds the picture of the member
         let memberPicture= document.createElement("img");
         memberPicture.className="CardPicture";
-        memberPicture.src="../images/MemberPics/"+AllMemb[i].Picture;
+        memberPicture.src="./images/MemberPics/"+AllMemb[i].Picture;
         memberCard.appendChild(memberPicture);
 
         //Adds the name of the member
@@ -80,7 +80,7 @@ function populateSpons(AllSpons){
         //Adds the picture of the member
         let SponsorImage= document.createElement("img");
         SponsorImage.className="SponsorImage";
-        SponsorImage.src="../images/Sponsors/"+AllSpons[i].Logo;
+        SponsorImage.src="./images/Sponsors/"+AllSpons[i].Logo;
         SponsCard.appendChild(SponsorImage);
 
         //Adds a space
