@@ -50,7 +50,7 @@ function populateList(AllMemb){
 
 async function populateMembers() {
     const requestURL1 =
-        "../JSON/members.json";
+        "JSON/members.json";
     const request1 = new Request(requestURL1);
 
     const response1 = await fetch(request1);
@@ -100,7 +100,7 @@ function populateSpons(AllSpons){
 
 async function populateSponsors() {
     const requestURL2 =
-        "../JSON/sponsors.json";
+        "JSON/sponsors.json";
     const request2 = new Request(requestURL2);
 
     const response2 = await fetch(request2);
