@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>NAU Yuma Baja</title>
     <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./javascript/script.js" defer></script>
 </head>
 <body>
     <!-- Header with navigation bar -->
@@ -20,8 +21,8 @@
     <div id="MainBody">
         <!-- Banner and introduction-->
         <div id="BannerID">
-            <h1 id="BannerTitle">NAU Yuma BAJA SAE</h1>
-            <p>This is the team representing NAU Yuma for the BAJA SAE 2026 competition.</p>
+            <h1 id="BannerTitle">NAU Yuma Baja SAE Team</h1>
+            <p class="BodySection">This is the team representing NAU Yuma for the Baja SAE 2026 competition at Washougal, Washington.</p>
         </div>
         <!-- About Us -->
         <div id="AboutUsID" class="BodySection">
@@ -31,18 +32,33 @@
 
         </div>
 
-        <div id="ProjectInfID" class="Body Section">
+        <!--Project Information-->
+        <div id="ProjectInfID" class="BodySection">
             <h2>Project Information</h2>
-            <p>Sample content</p>
+            <p><a href="https://www.bajasae.net/" target="_blank" class="orgLink">Baja SAE</a> organizes a competition that challenges students to put in practice their engineering skills by designing and building an off-road vehicle that must pass through multiple tests. 
+                The goal for the challenge is to mimic a real life situation in which a group of engineerings get together to work on a project as a team, in which they will face and overcome multiple challenges in the design and manufacturing process.<br />
+            </p>
         </div>
-        <!-- Team Members -->
-        <div id="TeamID" class="BodySection">
+
+        <!--YMEC information-->
+        <div id="YMECID" class="BodySection">
+            <h2>Yuma Mechanical Engineering Club <br/> (YMEC)</h2>
+            <p>For easiness of working on capstone projects, the mechanical engineering students in Yuma decided to create a club.
+                The goal for this club was not only to complete this project, but also help in future projects and provide experience and knowledge to other students.
+                This club helped in gathering funds and building a social network with other students and sponsors.
+
+            </p>
+        </div>
+
+
+        <!-- Team Leaders and Members -->
+        <div id="TeamID" class="BodySection ListSection">
             <h2>Team</h2>
             <h3>Team Leaders</h3>
             <div id="TeamLeadListID" class="TeamList">
                 <div class="MemberCard">
                     <h4 class="CardName">Sample Name</h4>
-                    <img class="CardImage"src="./images/placeholderbanner.png" width="100px">
+                    <img class="CardPicture"src="./images/placeholderbanner.png" width="100px">
                     <p class="MemberPosition">Sample Position</p>
                     <p class="MemberTeam">Sample Team</p>
                     <a href="#" class="MemberLink">LinkedIn Sample</a>
@@ -62,9 +78,16 @@
         </div>
 
         <!-- Sponsors -->
-        <div id="SponsorsID" class="BodySection">
+        <div id="SponsorsID" class="BodySection ListSection">
             <h2>Sponsors</h2>
             <p>Sample content</p>
+            <div id="SponsorID" class="SponsorList">
+                <div class="SponsorCard">
+                    <h4 class="SponsorName">Sample Name</h4>
+                    <img class="SponsorImage"src="./images/placeholderbanner.png" width="100px">
+                    <p class="SponsorTier">Sample Tier</p>
+                </div>
+            </div>
         </div>
 
         <!-- YMEC Contact -->
@@ -73,6 +96,5 @@
             <p>Sample content</p>
         </div>
     </div>
-<script type="module" src="./javascript/script.js"></script>
 </body>
 </html>

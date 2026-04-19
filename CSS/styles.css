@@ -53,6 +53,10 @@ body{
     margin: 0px;
 }
 
+.BodySection{
+    padding: 0px 50px 30px 50px;
+}
+
 /*Main Body / Banner and introduction*/
 #BannerTitle{
     height:300px;
@@ -77,10 +81,86 @@ body{
     justify-content: center;
     flex-wrap:wrap;
     gap: 20px;
+    padding: 10px 20px 10px 20px;
 }
 .MemberCard{
     background-color: rgb(233, 233, 248);
     width: 120px;
     padding: 10px;
+    padding-top:20px;
+    padding-bottom:20px;
     border-radius: 10px;
+}
+.CardPicture{
+    width:100px;
+    height:auto;
+}
+
+.LinkLogo{
+    width: 15px;
+    height:auto;
+    transform: translateY(2px);
+}
+
+/*Main Body / Sponsors*/
+.SponsorList{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.SponsorCard{
+    background-color: rgb(233, 233, 248);
+    width: 120px;
+    padding: 10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-radius: 10px;
+}
+
+.SponsorImage{
+    width:110px;
+}
+.Diamond{
+    border: 10px solid #B9F2FF;
+    border-top: 30px solid #B9F2FF;
+}
+
+.Gold{
+    border: 10px solid gold;
+    border-top: 30px solid gold;
+}
+.Iron{
+    border: 10px solid #D4D7D9;
+    border-top: 30px solid #D4D7D9;
+}
+
+.SponsorCard{
+    text-decoration: none;
+    position:relative;
+    font-weight:bold;
+    color:#002454;
+    border-radius: 15px;
+}
+
+.SponsorCard:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+.SponsorTier{
+    position:absolute;
+    top:0px;
+    right:50%;
+    transform:translate(50%,-25px)
+
+}
+
+
+/*For small screens*/
+@media (max-width:500px){
+.ListSection{
+    padding:0px;
+}
 }
