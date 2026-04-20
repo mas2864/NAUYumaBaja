@@ -76,9 +76,10 @@ body{
 }
 /*Main Body / YMEC*/
 
-#YMECLogoID:hover{
-    transform: scale(1.1) opacity(0.9);
-    transition: transform 1s ease;
+#YMECLogoID:hover {
+    transform: scale(1.1);
+    opacity:0.9;
+    transition: transform 1s ease, opacity 1s ease;
 
 }
 
