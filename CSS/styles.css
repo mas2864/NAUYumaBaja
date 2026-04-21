@@ -46,7 +46,7 @@ body{
 }
 
 .nav-link:hover{
-    background-color: rgb(166, 166, 214);
+    background-color: rgb(166, 166, 214)!important;
 }
 
 /*Main body*/
