@@ -45,7 +45,7 @@ body{
     border:#002454 1px solid;
 }
 
-.nav.link:hover{
+.nav-link:hover{
     background-color: rgb(166, 166, 214);
 }
 

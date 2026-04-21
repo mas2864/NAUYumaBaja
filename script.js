@@ -41,7 +41,7 @@ function populateList(AllMemb){
 
         let linkLogo= document.createElement("img");
         linkLogo.className="LinkLogo";
-        linkLogo.src="../images/linkedin.png";
+        linkLogo.src="./images/linkedin.png";
         memberLink.appendChild(linkLogo);
         memberLink.innerHTML+="LinkedIn";
   
