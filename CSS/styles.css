@@ -10,7 +10,7 @@ body{
     padding:0%;
     gap:0px;
     margin:0%;
-    grid-template-rows: auto 1fr 100px;
+    grid-template-rows: auto 1fr auto;
     text-align:center;
     font-family: system-ui, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
@@ -42,7 +42,7 @@ body{
     padding:10px;
     border-radius: 10px;
     max-width:100px;
-    border:#002454 1px solid;
+    border:#00245484 1px solid;
 }
 
 .nav-link:hover{
@@ -58,7 +58,10 @@ body{
 }
 
 .BodySection{
-    padding: 0px 50px 30px 50px;
+    padding: 10px 30px 30px 30px;
+    margin: 20px 20px 40px 20px;
+    border-radius:20px;
+    background-color: rgb(233, 233, 248);
 }
 
 /*Main Body / Banner and introduction*/
@@ -67,7 +70,7 @@ body{
     margin:0px;
     z-index:9;
     background-image: url("../images/placeholderbanner.png");
-    background-size: 100% auto;
+    background-size: 50% auto;
     background-repeat:no-repeat;
     background-position: center;
     background-position-y: center;
@@ -81,7 +84,7 @@ body{
 /*Main Body / YMEC*/
 
 #YMECLogoID:hover {
-    scale:1.1;
+    scale:1.05;
     opacity:0.9;
     transition: scale 1s ease, opacity 1s ease !important;
 }
@@ -95,12 +98,13 @@ body{
     padding: 10px 20px 10px 20px;
 }
 .MemberCard{
-    background-color: rgb(233, 233, 248);
+    background-color: rgb(242, 242, 255);
     width: 120px;
     padding: 10px;
     padding-top:20px;
     padding-bottom:20px;
     border-radius: 10px;
+    border: 1px solid #0024544b;
 }
 .CardPicture{
     width:100px;
@@ -110,7 +114,7 @@ body{
 .LinkLogo{
     width: 15px;
     height:auto;
-    transform: translateY(2px);
+    transform: translateY(2px)translateX(-3px);
 }
 
 /*Main Body / Sponsors*/
@@ -119,55 +123,103 @@ body{
     justify-content: center;
     flex-wrap:wrap;
     gap: 20px;
-    padding: 10px 20px 10px 20px;
-}
-
-.SponsorCard{
-    background-color: rgb(233, 233, 248);
-    width: 120px;
-    padding: 10px;
-    padding-top:20px;
-    padding-bottom:20px;
-    border-radius: 10px;
 }
 
 .SponsorImage{
     width:110px;
 }
+
+.SponsorBorder{
+    text-decoration:none;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color:#002454;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease !important;
+}
+
+.SponsorBorder:hover{
+    transform:scale(1.05);
+}
+
+.SponsorBorder:hover .SponsorImage{
+    opacity:0.9;
+    transition: opacity 0.5s ease !important;
+}
+
 .Diamond{
-    border: 10px solid #B9F2FF;
-    border-top: 30px solid #B9F2FF;
+    background-color: #B9F2FF;
+    border: 1px solid #20738639;
+}
+.Diamond:hover{
+    background-color: #38b2cd;
+    box-shadow: 5px 5px 5px #207486;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease !important;
 }
 
 .Gold{
-    border: 10px solid gold;
-    border-top: 30px solid gold;
+    background-color:gold;
+    border: 1px solid #8370023d; 
 }
+
+.Gold:hover{
+    background-color: #cfb001;
+    box-shadow: 5px 5px 5px #837002;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease !important;
+}
+
 .Iron{
-    border: 10px solid #D4D7D9;
-    border-top: 30px solid #D4D7D9;
+    background-color:#D4D7D9;
+    border: 1px solid #6e6b6b3d; 
+}
+
+.Iron:hover{
+    background-color: #989595;
+    box-shadow: 5px 5px 5px #6e6b6b;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease !important;
 }
 
 .SponsorCard{
-    text-decoration: none;
-    position:relative;
-    font-weight:bold;
-    color:#002454;
-    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.697);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width: 120px;
+    height:calc(100% - 45px);
+    bottom:0px;
+    padding: 10px;
+    border-radius:10px;
+    transition: background-color 0.5s ease !important;
 }
 
-.SponsorCard:hover{
-    transform: scale(1.1);
-    transition: transform .5s;
+/*footer*/
+.footer{
+    width:100%;
+    grid-row:3;
+    background-color: rgb(233, 233, 248);
 }
-.SponsorTier{
-    position:absolute;
-    top:0px;
-    right:50%;
-    transform:translate(50%,-25px)
+/*footer / contact*/
 
+#ContactID{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 10px;
+    height:auto;
+    padding:20px;
+    padding-bottom:30px;
 }
 
+.phoneNum{
+    color: #002454;
+    font-size: 17px;
+    padding:10px;
+    border-radius:15px;
+}
 
 /*For small screens*/
 @media (max-width:500px){
@@ -175,3 +227,4 @@ body{
     padding:0px;
 }
 }
+
