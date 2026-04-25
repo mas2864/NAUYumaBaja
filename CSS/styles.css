@@ -61,7 +61,7 @@ body{
     padding: 10px 30px 30px 30px;
     margin: 20px 20px 40px 20px;
     border-radius:20px;
-    background-color: rgb(233, 233, 248);
+    background-color: rgba(233, 233, 248, 0.612);
 }
 
 /*Main Body / Banner and introduction*/
