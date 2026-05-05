@@ -31,20 +31,21 @@ function populateList(AllMemb){
         memberTeam.innerHTML=AllMemb[i].Team;
         memberCard.appendChild(memberTeam);
 
-        //Adds the linkedin of the member
-        let memberLink= document.createElement("a");
-        memberLink.className="MemberLink";
-        memberLink.href="https://"+AllMemb[i].Linkedin;
-        memberLink.target="_blank";
-        
-        memberCard.appendChild(memberLink);
+        if(AllMemb[i].Linkedin!="x"){
+            //Adds the linkedin of the member
+            let memberLink= document.createElement("a");
+            memberLink.className="MemberLink";
+            memberLink.href="https://"+AllMemb[i].Linkedin;
+            memberLink.target="_blank";
+            
+            memberCard.appendChild(memberLink);
 
-        let linkLogo= document.createElement("img");
-        linkLogo.className="LinkLogo";
-        linkLogo.src="./images/linkedin.png";
-        memberLink.appendChild(linkLogo);
-        memberLink.innerHTML+="LinkedIn";
-  
+            let linkLogo= document.createElement("img");
+            linkLogo.className="LinkLogo";
+            linkLogo.src="./images/linkedin.png";
+            memberLink.appendChild(linkLogo);
+            memberLink.innerHTML+="LinkedIn";
+        }
     }
 }
 
@@ -114,3 +115,30 @@ async function populateSponsors() {
 }
 
 populateSponsors();
+
+
+
+function populateGallery(){
+    let Gallery= document.getElementById("GalleryID");
+    Gallery.innerHTML="";
+
+    for(let i=0;i<19;i++){
+        //creates a card container for the anchor
+        let GalleryContainer=document.createElement("a");
+        GalleryContainer.className="GalleryContainer";
+        GalleryContainer.href="./images/Gallery/"+i+".jpg";
+        GalleryContainer.target="_blank";
+        Gallery.appendChild(GalleryContainer);
+
+        //creates the image element
+        let GalleryImage=document.createElement("img");
+        GalleryImage.className="GalleryImage";
+        GalleryImage.id="GalleryImage"+i;
+        GalleryImage.src="./images/Gallery/"+i+".jpg";
+        GalleryContainer.appendChild(GalleryImage);
+        let GalleryCheck=document.getElementById("GalleryImage"+i)
+        
+    }
+}
+
+populateGallery();

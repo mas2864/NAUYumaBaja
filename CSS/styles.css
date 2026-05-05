@@ -81,6 +81,41 @@ body{
     text-shadow: 2px 2px 4px #fac01a;
     font-size:50px;
 }
+
+/*Main Body / Project Gallery*/
+
+#GalleryID{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap: 20px;
+    height:500px;
+    overflow-y:scroll;
+    padding: 10px 10px 10px 10px;
+}
+
+.GalleryContainer{
+    border-radius:15px;
+    border: 1px solid #0024541f;
+    width:180px;
+    height:auto;
+    max-height:180px;
+    overflow:hidden;
+    transition: border-radius 2s ease, scale 0.5s ease !important;
+}
+.GalleryImage{
+    width:180px;
+    object-fit: cover
+}
+
+.GalleryContainer:hover{
+    overflow:visible;
+    border-radius:0px;
+    scale:1.25;
+}
+
+
 /*Main Body / YMEC*/
 
 #YMECLogoID:hover {
@@ -222,9 +257,24 @@ body{
 }
 
 /*For small screens*/
-@media (max-width:500px){
+@media (max-width:600px){
 .ListSection{
     padding:0px;
+    padding-top:10px;
+    padding-bottom:15px;
 }
+.GalleryContainer{
+    width:150px;
+    height:auto;
+    max-height:150px;
 }
+
+.GalleryImage{
+    width:150px;
+
+}
+
+}
+
+
 
