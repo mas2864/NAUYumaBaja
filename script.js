@@ -122,7 +122,7 @@ function populateGallery(){
     let Gallery= document.getElementById("GalleryID");
     Gallery.innerHTML="";
 
-    for(let i=0;i<19;i++){
+    for(let i=0;i<=18;i++){
         //creates a card container for the anchor
         let GalleryContainer=document.createElement("a");
         GalleryContainer.className="GalleryContainer";
